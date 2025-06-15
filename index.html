@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP del clima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" class="search-bar" placeholder="Buscar ciudad..." id="search-input" >
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="weather-container">
+                <div class="location-box">
+                    <div class="location" id="location">Ciudad, Pais</div>
+                    <div class="date" id="date">Lunes 1 Enero 2023</div>
+                </div>
+                <div class="weather-box">
+                    <div class="temp" id="temp">--C</div>
+                    <div class="weather" id="weather">--</div>
+                    <div class="weather-details">
+                        <div class="detail">
+                            <i class="fas fa-temperature-high"></i>
+                            <span id="feels-like">Sensación: --°C</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-tint"></i>
+                            <span id="humidity">Humedad: --%</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-wind"></i>
+                            <span id="wind">Viento: --km/h</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="forecast-container" id="forecast">
+                    <!--  -->
+                </div>
+            </div>
+            <div class="initial-message">
+                <i class="fas fa-cloud-sun"></i>
+                <p>Ingresa una ciudad para ver el clima actual</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
