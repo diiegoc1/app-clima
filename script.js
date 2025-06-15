@@ -169,7 +169,7 @@ function displayForecast(forecast) {
   });
 
   // Tomar los primeros 7 días
-  const forecastDays = Object.values(dailyForecast).slice(0, 7);
+  const forecastDays = Object.values(dailyForecast).slice(0, 6);
 
   forecastDays.forEach((day) => {
     const date = new Date(day.dt * 1000);
